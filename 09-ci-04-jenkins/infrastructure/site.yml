@@ -146,4 +146,3 @@
       until: install_agent is succeeded
       retries: 10
       timeout: 10
-

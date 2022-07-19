@@ -14,14 +14,14 @@
      - src: git@github.com:netology-code/mnt-homeworks-ansible.git
        scm: git
        version: "2.1.4"
-       name: elastic 
+       name: elastic
    ```
 2. При помощи `ansible-galaxy` скачать себе эту роль.
 3. Создать новый каталог с ролью при помощи `ansible-galaxy role init kibana-role`.
-4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
+4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`.
 5. Перенести нужные шаблоны конфигов в `templates`.
 6. Создать новый каталог с ролью при помощи `ansible-galaxy role init filebeat-role`.
-7. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
+7. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`.
 8. Перенести нужные шаблоны конфигов в `templates`.
 9. Описать в `README.md` обе роли и их параметры.
 10. Выложите все roles в репозитории. Проставьте тэги, используя семантическую нумерацию.

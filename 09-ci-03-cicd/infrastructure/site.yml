@@ -138,7 +138,7 @@
 
 - name: Get Sonarqube installed
   hosts: sonarqube
-  vars: 
+  vars:
     ansible_user: "{{ sonarqube_db_user }}"
   tasks:
     - name: Get distrib ZIP
@@ -180,7 +180,7 @@
           line: "sonar.jdbc.url=jdbc:postgresql://localhost:{{ sonar_db_port }}/{{ sonarqube_db_name }}?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance"
         - regexp: "^sonar.web.context"
           line: "sonar.web.context={{ sonar_web_context }}"
-    
+
     - name: Generate wrapper.conf
       template:
         src: wrapper.conf.j2
